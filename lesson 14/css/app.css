@@ -1,0 +1,11 @@
+.card {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px rgba(245, 217, 217, 0.74);
+}
+
+body {
+  background-color: #109126;
+}
+
+/*# sourceMappingURL=app.css.map */

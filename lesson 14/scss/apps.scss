@@ -1,0 +1,17 @@
+$red:rgb(40, 175, 63);
+
+$roundes-sm:7px;
+$shadow-sm:7px 7px 7px rgba(245, 217, 217, 0.74);
+
+.card{
+    width: 350px;
+    border-radius:  5px;
+    box-shadow: $shadow-sm;
+  
+}
+   body{
+      background-color:$red;
+   }  
+    
+   
+    
