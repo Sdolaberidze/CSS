@@ -1,17 +1,64 @@
-$red:rgb(40, 175, 63);
+   @import'/scss/button.scss';
+   @import'/scss/color.scss';
+  $roudes-sm:7px;
+  $shadow:7px 7px 7px white;
+  $dark-mode:false;
 
-$roundes-sm:7px;
-$shadow-sm:7px 7px 7px rgba(245, 217, 217, 0.74);
+  .card{
+      width: 370px;
+      border-radius: $roudes-sm;
+      box-shadow: $shadow;
+      text-align: center;
+      margin: auto;
+      position:  ;
+      img{
+          
+          width: 100%;
+      
+      .card-body{
+          padding: 8px;
+      
+      .card-footers{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 25px;
 
-.card{
-    width: 350px;
-    border-radius:  5px;
-    box-shadow: $shadow-sm;
-  
-}
-   body{
-      background-color:$red;
-   }  
-    
-   
-    
+        button{
+            @include btn();
+
+            &:hover{              
+                cursor: pointer;
+            
+           &.addcard{background-color: $btn-cart;
+
+                     
+           } 
+
+         
+            
+       
+          }
+
+      
+        }
+        &:hover img{
+            position: absolute;
+           animation: animes;
+           animation-duration: .6s;
+           animation-iteration-count: 1;
+
+        }
+    }
+    @keyframes animes{
+        0%{ left: -100%; opacity: 0;}
+        50%{ left: -150% ;opacity: 0;}
+       
+        100%{left:0; opacity: 1;}
+
+
+    }
+
+    body{
+      background-color: if($dark-mode, red, false);
+    }

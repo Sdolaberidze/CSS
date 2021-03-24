@@ -1,2 +1,8 @@
 $btn:0px;
 $border-sm:7px;
+
+@mixin  btn {
+    appearance: none;
+    padding: 7px;
+    border-radius: $border-sm;
+}
