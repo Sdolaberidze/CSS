@@ -1,0 +1,47 @@
+.mynav.bg-light{
+    background-color: red !important;
+}
+.mynav .nav-link{
+    padding-left: 1.5rem  !important;
+    padding-right: 1.5rem  !important;
+
+}
+.logo{
+    width: 40px ;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    left: 50px ;
+
+}
+.mynav .nav-link {
+    padding-left: 2rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.carousel-item{
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+}
+.carousel-control-next ars{
+    background-color: grey;
+    padding: 31px;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
