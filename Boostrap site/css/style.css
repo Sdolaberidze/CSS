@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: Karla;
+    src: url(../font/Karla-Light.ttf);
+}
+@font-face {
+    font-family: Karlab;
+    src: url(../font/Karla-Bold.ttf);
+}
+a a:hover{
+    text-decoration: none;}
+  .carousel-item {
+    height: 730px;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+.sub-nav .p {
+    font-family: Karlara;
+    margin-top: 0px !important;
+}
+.z-index{
+    z-index: 999;
+    width: 100%;
+}
+.z-index:first-child{
+
+    background-color: #e5eef0;
+    font-family: Karla;
+    color:#b4c0c4;
+    font: 13px !important;
+    height: 52px;;
+    
+}
+.z-index:nth-child(2){
+    top:3.2rem;
+    background-color:#ffffff;
+    font-family: Karla;
+    font-size: 15px;
+    color: #93a1a7;
+    height: 76px;
+
+}
+.z-index .list-inline{
+    margin-top: 17;
+    margin-bottom: 1rem;
+}
