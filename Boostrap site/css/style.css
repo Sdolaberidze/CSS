@@ -15,9 +15,20 @@
     font-family: DEja;
     src: url(../font/bpg_dejavu_sans.otf);
 }
-a a:hover{
+@font-face {
+    font-family: Opensans;
+    src: url(../font/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(../font/Lora-Italic.ttf);
+}
+ a:hover{
     text-decoration: none;
     
+}
+a{
+    text-decoration: none;
 }
   .carousel-item {
     height: 870px;
@@ -65,8 +76,8 @@ a a:hover{
 }
 @media (min-width: 992px){}
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: .5rem;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-top: 18px;
     padding-bottom: 19px;
 }
@@ -75,17 +86,24 @@ a a:hover{
 
 }
 .nav-item:last-child .nav-link {
-    width: 140px !important; 
-    height: 38px !important;
+    padding: 8px 28px 8px 28px !important;
     background-color: #29c2e1 !important;
     border-radius: 40px !important; 
     color: white;
-    justify-content: center;
-    align-items: center;
+   
+    padding: inherit;
     
 
 
 }
+
+.nav-item:last-child{
+    position: relative;
+    padding-top: 8px;
+    padding-left: 26px;
+  
+}
+
 
 .nav-item:first-child .nav-link {
     color: #000000;
@@ -122,4 +140,124 @@ a a:hover{
     transition: opacity .6s ease;
     border-radius: 9px;
     margin-bottom: 26px;
+}
+/* ------- */
+.first{
+    font-family: Opensans;
+}
+.lastimg{
+     
+     max-width: 100%;
+     width: 585px;
+     height: 301px;
+}
+.first p{
+    font-size: 14px;
+    color: #55595f;
+    padding-bottom: 43px;
+}
+.first h3{
+    
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: -5px !important;
+}
+.first h5{
+    font-weight: 600;
+    color: black;
+    
+    padding-bottom: 15px;
+    
+}
+.first{
+    padding-top: 96px;
+}
+.btncnt{
+     
+      padding: 8px 28px 8px 28px !important;
+    
+    background-color: #29c2e1 !important;
+    border-radius: 40px !important; 
+    color: white;
+   
+    display: flex;
+}
+.second {
+   padding-top: 103px;
+}
+.second p{
+    padding-bottom: 28px;
+}
+  .shape{
+      width: 67px;
+      height: 67px;
+      max-width: 100%!important;}
+/* 
+  client slide 2 */
+  .clientcarousel{
+      
+      background-color: #e5eef0;
+      
+     
+  }
+
+.clientcarousel  .carousel-item{
+    height: 466px;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    
+    background-size: cover;
+}
+.clientcarousel h3{
+    font-family: Opensans;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 93px;
+}
+.clientcarousel h5{
+    font-family: opensans;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 38px;
+}
+.clientcarousel p{
+    font-family: lora;
+    font-size: 15px;
+}
+.clientcarousel .p :nth-child(3){
+    font-family: Karla;
+    color: darkgoldenrod;
+}
+.clientcarousel .carousel-indicators {
+    position: relative;
+    top: 210px;
+    left: 2px;
+}
+
+.clientcarousel  .carousel-indicators li{
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 9px;
+    height: 8px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #b3cacf;
+    background-clip: padding-box;
+    border-top:none;
+     border-bottom:none; 
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 9px;
+    margin-bottom: 26px;
+}
+.clientcarousel  .carousel-indicators li:active{
+    background-color: rgb(0, 119, 255);
+}
+.clientimg{
+   position: relative;
+   top: 189px;
 }
