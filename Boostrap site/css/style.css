@@ -142,7 +142,7 @@ a{
     margin-bottom: 26px;
 }
 /* ------- */
-.first{
+.first, .feature , .pricing , .team{
     font-family: Opensans;
 }
 .lastimg{
@@ -151,26 +151,26 @@ a{
      width: 585px;
      height: 301px;
 }
-.first p{
+.first p, .feature p, .pricing p , .team p{
     font-size: 14px;
     color: #55595f;
     padding-bottom: 43px;
 }
-.first h3{
+.first h3, .feature h3 , .pricing h3 , .team h3{
     
     color: black;
     font-weight: 900;
     text-transform: uppercase;
     padding-bottom: -5px !important;
 }
-.first h5{
+.first h5, .feature h5 , .pricing h5,  .team h5{
     font-weight: 600;
     color: black;
     
     padding-bottom: 15px;
     
 }
-.first{
+.first, .feature , .pricing, .team{
     padding-top: 96px;
 }
 .btncnt{
@@ -189,10 +189,7 @@ a{
 .second p{
     padding-bottom: 28px;
 }
-  .shape{
-      width: 67px;
-      height: 67px;
-      max-width: 100%!important;}
+  
 /* 
   client slide 2 */
   .clientcarousel{
@@ -260,4 +257,38 @@ a{
 .clientimg{
    position: relative;
    top: 189px;
+}
+.feature .container {
+  border-bottom: #e5eef0 1px solid;
+
+
+}
+/* ------- */
+.bg1{
+    width: 300px;
+    height: 200px;
+    width: 405px;
+    right: 329px;
+    height: 277px;
+    z-index: -1;
+    top: -66px;
+
+}
+
+
+
+
+@media  (max-width:576px) {
+
+    footer{
+        text-align: center;
+    
+    }
+    
+}
+
+@media (max-width:1214px) {
+    .bg1{
+        display: none;
+    }
 }
