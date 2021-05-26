@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.slider-container{
+
+
+ position: relative;
+ height: 100%;
+
+}
+
+.slider-item.active{
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+    transform: translateX(0%);
+}
+
+.slider-item{
+    opacity: 0;
+    transform: translateY(-50%);      /* თავიდან სლაიდის  დგომა იქნება მინუსში და ჩამოვა ზევიდან    */
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    z-index: 900;
+    border-radius: 10px;
+    border: 10px solid;
+    padding: 10px;
+    color: white !important;
+    transform: translatex(-50% ,-50%);
+    
+   
+    background-color: rgb(34, 33, 33) !important;
+    border: outset 5px !important;
+
+}
+
+button:first-child{
+    left:  7%;
+
+}
+
+button:nth-child(2)
+{
+    right: 7%;
+}
+
+.carousel-body{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    border-radius: 10px;
+    border: outset 5px;
+    background-color: seashell;
+
+
+}
+.switch{
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translatex(-50%);
+    
+    display: inline-block;
+    
+
+
+
+}
+span{
+
+  
+ 
+    color: white;
+   
+    
+
+}
+ span.active{
+
+    color: green;
+}
+
+
+
+span:hover{
+    cursor: pointer;      /* დაემატება შეხების პოინტერი ბატონივით*/
+}
+
+
+.portfolio{
+
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+  
+
+}
+
+.portfolio li{
+
+ display: inline-block;
+ padding: 7px;
+ background-color: gray;
+
+ margin: 7px;
+ transition:  all .6s;
+ 
+
+
+
+}
+.portfolio li.active{
+    background-color: green;
+}
+
+.portfolio li:hover{
+
+    cursor: pointer;
+}
+
+
+.content{
+    width: 700px;
+
+    margin: 50px auto 30px ;
+    
+}
+
+.insider{
+   
+    
+    transition: all 0.6s;
+    transform:  scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s;
+   
+
+}
+
+.insider.active{
+    
+    background-color: green;
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.6s;
+   
+}
+
+.btn-ss{
+
+    top: 80px;
+}
+
+.scroll{
+    width: 400px;
+    overflow-x: scroll;
+}
