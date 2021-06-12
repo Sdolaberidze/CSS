@@ -27,5 +27,13 @@ $(document).ready(function () {
 
     //  $(".parent").empty() -წაშლის
   //  $(".parent").remove() -ყველაფერს შლის
+  $().on("click",".remove", function () {             //append-ით შექმნილს რომ შევხედოთ 1 ქლიქზე გაეშვება
+
+    $(this).parents("card").remove();
+    parent.width("300px");   //წამოიღებს ზომას , თუ მივუთითებთ ზომას ის ზომა გახდება
+                          // innerWidth(),outerWidth()
+});
+       
+
 
 });

@@ -63,27 +63,29 @@ button:hover{
     opacity: 0;
 }
 
-.steps.active i::before{
+
+
+ .step-1.active i::after,.step-1.add  i::after {
+
     content: "";
-    width: 20%;
+    width:110px;
     height: 5px;
     position: absolute;
     background-color: tomato;
     transform: translateY(-50%);
-    bottom: 30%;
-
-
-
+    left: 104%;
 
 }
 
-.steps.active  :after{
+.step-2.active i::after,.step-2.add  i::after {
 
     content: "";
-    width: 20%;
+    width:110px;
     height: 5px;
     position: absolute;
     background-color: tomato;
     transform: translateY(-50%);
+    left: 104%;
 
 }
+

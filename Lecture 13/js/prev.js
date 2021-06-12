@@ -2,11 +2,12 @@ $(document).ready(function () {
     
   $(".next").click(function (e) { 
     let checknext = $(".steps.active").next().length;  //შემდეგი ელემენტი გვაქ თი არა
+   
 
     if( checknext > 0){                        //თუ შემდეგი ელემენტი ნულის ტოლი არაა  აქტივი დაემატება შემდეგ ელემნტს
        
 
-    $(".steps.active").removeClass("active").next().addClass("active");
+    $(".steps.active").addClass("add").removeClass("active").next().addClass("active");
     }
     else{
         $(".next").html("finish");
