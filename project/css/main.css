@@ -1,0 +1,137 @@
+
+.navbar {
+   padding: 0px !important;
+   border-bottom: 1px solid #2a3042 ;
+   width: 1800px;
+   background-color: rgba(0, 0, 255, 0);
+   position: absolute;
+   z-index: 999;
+   
+
+}
+.navbar .nav-item{
+    border-right: 1px solid  #2a3042   ;
+    font-size: 20px;
+    padding: 16px;
+    color: white;
+}
+.navbar .container{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-item i{
+    color: white;
+    font-weight: 600;
+}
+
+.last :nth-child(1){
+    border-left: 1px solid #ccd5f1;
+}
+.last :nth-child(3){
+    border-right: none;
+}
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.slider-container{
+
+
+ position: relative;
+ height: 100%;
+ width: 100%;
+
+}
+
+.slider-item.active{
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+    transform: translateX(0%);
+}
+
+.slider-item{
+    opacity: 0;
+    transform: translateY(-50%);      /* თავიდან სლაიდის  დგომა იქნება მინუსში და ჩამოვა ზევიდან    */
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    z-index: 900;
+   
+  
+    padding: 10px !important;
+    color: rgb(155, 151, 151) !important;
+    transform: translatex(-50% ,-50%);
+    border: 1px solid rgb(172, 171, 171) !important;
+    border-radius: 500px !important;
+    
+   
+   
+  
+
+}
+
+button:first-child{
+    left:  7%;
+
+}
+
+button:nth-child(2)
+{
+    right: 7%;
+}
+
+
+.switch{
+    position: absolute;
+    left: 80%;
+    bottom: 7%;
+    transform: translatex(-50%);
+    
+    display: inline-block;
+    border-radius: 100px !important;
+    
+
+
+
+}
+span{
+
+  
+ 
+    color: white;
+   
+    
+
+}
+ span.active{
+
+    color: rgb(63, 65, 63);
+}
+
+
+
+span:hover{
+    cursor: pointer;      /* დაემატება შეხების პოინტერი ბატონივით*/
+}
+
+
+
+
+
